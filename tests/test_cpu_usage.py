@@ -2,7 +2,7 @@ import unittest
 from resmonio.metrics.collector.cpu_usage import get_cpu_count, get_cpu_metrics
 
 
-class CpuTest(unittest.TestCase):
+class CpuUsageTest(unittest.TestCase):
 
     def test_cpu_count(self):
         print("Testing CPU count : %d" % get_cpu_count())
