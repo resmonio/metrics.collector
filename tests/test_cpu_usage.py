@@ -15,9 +15,9 @@ class CpuUsageTest(unittest.TestCase):
         print(type(core_usages))
         print(core_usages)
         print("Testing CPU core usages:")
-        for usage in core_usages:
-            print("CPU core usage : %d" % usage)
-            self.assertGreaterEqual(usage, 0)
+        for core_usage in core_usages:
+            for core_key in core_usage:
+                print("%s usage : %d" % (core_key, core_usage[core_key]))
 
 
 
